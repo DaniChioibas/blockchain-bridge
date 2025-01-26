@@ -1,0 +1,113 @@
+/* App.css */
+
+/* General reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fa;
+  color: #2d3748;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.wallet-section, .transfer-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #edf2f7;
+}
+
+.wallet-details, .wallet-actions, .transfer-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+button {
+  background-color: #1fa0c0;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #035c80;
+  transform: scale(1.02);
+}
+
+button:disabled {
+  background-color: #c1c1c1;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  input[type="number"] {
+    font-size: 14px;
+  }
+}
